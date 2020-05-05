@@ -5,7 +5,6 @@
   "manifest_version": 2,
   "permissions": ["https://www.youtube.com/*"],
   "icons": { "16": "icon-16.png", "48": "icon-48.png", "128": "icon-128.png" },
-  "homepage": "https://github.com/aaronransley/youtube-quick-marker",
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],

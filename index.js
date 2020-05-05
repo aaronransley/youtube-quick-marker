@@ -21,7 +21,7 @@ async function rightClickBehavior(e) {
   e.preventDefault()
 
   let clickedEle = jQuery(e.target)
-  let parentThumb = clickedEle.closest('ytd-grid-video-renderer')
+  let parentThumb = clickedEle.closest('#dismissable')
 
   // Open context menu
   let menuBtn = parentThumb.find('#menu button')
@@ -34,7 +34,7 @@ async function rightClickBehavior(e) {
   await forMs(delayInterval)
 
   // Select "Tell us why"
-  let tellUsWhyBtn = parentThumb.find('paper-button:contains("Tell us why")')
+  let tellUsWhyBtn = parentThumb.closest('#content').find('paper-button:contains("Tell us why")')
   tellUsWhyBtn.trigger('click')
 
   appState.waitingForHotkey = true
@@ -51,12 +51,6 @@ function handleHotkey(e) {
       break
     case '2':
       selectFeedbackAndSubmit('like the video')
-      break
-    case '3':
-      selectFeedbackAndSubmit('not interested in this channel')
-      break
-    case '4':
-      selectFeedbackAndSubmit('recommendations based on')
       break
   }
 

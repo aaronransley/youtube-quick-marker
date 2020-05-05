@@ -7,6 +7,6 @@
 Only works on YouTube homepage & the recommendation shelves. Support for "recommended videos" sidebar coming soon.
 
 1. Right click thumbnails to pull up the feedback dialog
-2. Use 1-4 on your keyboard to select a checkbox and everything will wrap itself up
+2. Use 1-2 on your keyboard to select a checkbox and everything will wrap itself up
 
-Go forth and feed the algorithm!
+**Updated 4/27/2020** to fix compatibility issues with recent YouTube design changes. This release removes support for options 3-4, but core functionality remains.
